@@ -1,3 +1,37 @@
+# JAVAV
+
+
+
+## spring
+
+### spring代理
+
+> spring的aop是动态的去判断使用jdk代理或者是cglib代理
+>
+> 可以再启动类上添加**@EnableAspectJAutoProxy（proxyTargetClass=  true）**强行使用cglib代理。默认的是false
+
+
+
+
+
+## java
+
+### java中的引用类型
+
+- 强引用
+
+日常写的任何类都是强引用类型
+
+- 软引用
+
+软的引用，当jvm内存不够的时候被回收
+
+- 弱引用
+
+被垃圾回收期发现就会被回收
+
+- 虚引用
+
 
 
 ## Commons BeanUtils 和 Spring BeanUtils 的区别
