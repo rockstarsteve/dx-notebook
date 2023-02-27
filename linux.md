@@ -1,6 +1,6 @@
 # Linux的一些常见的命令
 
-### 防火墙
+## 防火墙
 
 关闭防火墙:systemctl stop firewalld
 
@@ -10,7 +10,27 @@
 
 
 
+## 目录方面：ls,mkdir
+
+ls：显示指定目录的文件和目录。
+
+cd：切换目录。cd - 是回到上一次目录
+
+mkdir： 创建目录。
+
+cp：复制文件和目录。cp -r 
+
+mv：移动和重命名。
+
+rm：删除文件和目录。
+
+
+
+## 文件查看
+
 读取文件的内容（tail）：
+
+tail -f 文件名
 
 ```
 // 默认显示 log 文件的最后 10 行
@@ -21,35 +41,27 @@ tail -f test.log
  
 // 显示 log 文件的最后 n 行，同时跟踪名为文件的增长情况，直到您按下（Ctrl-C）组合键停止显示。
 tail -nf test.log
- 
-// 显示文件的最后 10 行
-tail -n 10 filename
- 
-// 文件的第 9 行不显示，显示第 10 行到末尾行
-tail -n -10 filename
- 
-// 显示文件的第 10 行到末尾行
-tail -n +10 filename
- 
-逆序显示filename最后10行。
-tail -r -n 10 filename
- 
-// 显示第20行至末尾
-tail +20 test.log
- 
-// 显示最后10个字符
-tail -c 10 test.log
 ```
 
 
 
-tail -f 文件名
+## 文件权限
+
+chmod：修改文件夹的权。chmode -R 777 test.txt
 
 
 
+## 压缩解压
 
+### gz（建议不用）
 
-动态读取：
+	- 压缩：gzip test.txt
+	- 解压：gzip -d test.txt.gz
+
+### tar
+
+- 压缩：tar -cf all.tar test.txt
+- 解压：tar -xf all.tar
 
 
 

@@ -93,7 +93,12 @@ ubuntu下的命令：	service docker start
 
 
 
+## docker-compose命名
 
+- 后台启动docker-compose.yml
+  - docker-compose up -d
+- 关闭清理
+  - docker-compose down
 
 
 
